@@ -102,6 +102,31 @@ audio {
   cursor: pointer;
 }
 
+.track-info {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,.75);
+  letter-spacing: .5px;
+}
+
+#track-title {
+  display: block;
+  animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* PROGRESS */
 #progressWrap {
   width: 100%;
@@ -203,3 +228,4 @@ audio {
     transform: scale(1.05);
   }
 }
+
